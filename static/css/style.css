@@ -1,0 +1,357 @@
+/*Отключаем отступы на всём элементе*/
+body {
+    margin:0;
+    background-color: #AFEEEE;
+    }
+
+/* Отключаем scrollbar (Полоса сбоку для того, чтобы листать) */
+::-webkit-scrollbar {
+    display: none;
+    }
+
+/* Изменение цвета кнопки при наведении на неё курсором */
+.btn:hover {
+    background-color: #4B0082;
+    }
+
+/* Стилизация нашей шапки */
+.head {
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 100;
+    }
+
+/* Добавление указателя наведённой кнопки */
+.nav-item, .nav-item2 {
+    text-decoration: none;
+    font: 20px/40px Roboto, sans-serif;
+    position: relative;
+    transition: all .2s ease;
+    }
+
+.nav-item:after {
+     content: '';
+     position: absolute;
+     border: 10px solid darkgray;
+     border-top-color: transparent;
+     border-left-color: transparent;
+     border-right-color: transparent;
+     left: calc(37% - 5px);
+     transition: all .2s ease;
+     bottom: -5px;
+     opacity: 0;
+    }
+
+.nav-item:hover {
+     color: darkgray;
+     text-shadow: 0 0 1px darkgray;
+    }
+
+.nav-item:hover:after {
+    bottom: 0;
+    opacity: 1;
+    }
+
+/* Стилизация второго меню под шапкой */
+.nav2 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 2px solid #0066FF;
+    text-align: center;
+    background-color: #33ADFF;
+    }
+
+.nav-item2 {
+    display: inline;
+    }
+
+.nav-link2 {
+    color: #24336F;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    }
+
+/* Стилизация div, в котором содержится текст под меню */
+.bg-page1 {
+    margin-top:8.6vw;
+    padding-bottom: 20%;
+    }
+
+/* Стилизация первого текста */
+.text-name {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-family: 'Rum Raisin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px #4B0082;
+    }
+
+/* Стилизация второго текста */
+.sub-text-name {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 63px;
+    color: #4B0082;
+    }
+
+/* Стилизация общего контейнера для отзывов и подробной инфо-ци */
+.info {
+    margin: 0px 10px;
+    padding-left: 5px;
+    }
+
+/* Стилизация двух контейнеров для отзывов и подробной инфо-ци */
+.info-detail {
+    border: 2px solid #4682B4;
+    width: 70%;
+    background-color: #ADD8E6;
+    color: #fff;
+    text-shadow: 3px 3px 3px blue;
+    padding-left: 10%;
+    border-radius: 10%;
+    }
+
+/* Стилизация контейнера для отзывов*/
+.feedback {
+    margin-left: 15%;
+    padding: 20px;
+}
+
+/* Cтилизация контейнера для поиска анализов и адресов*/
+.detail {
+    margin-left: 15%;
+    padding: 10px;
+    }
+
+/* Стилизация раздела Акции и скидки */
+.card-text {
+    color: #00008B;
+    text-shadow: none;
+    }
+
+/* Стилизация изображений в секции Акции и скидки */
+.promotion1 {
+    background-image: url(../images/promo1.jpg);
+    }
+
+.promotion2 {
+    background-image: url(../images/promo2.jpg);
+    }
+
+.promotion3 {
+    background-image: url(../images/promo3.jpg);
+    }
+
+.promotion4 {
+    background-image: url(../images/promo4.jpg);
+    }
+
+.promotion1, .promotion2, .promotion3, .promotion4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+/* Размер карточек: Акции и скидки*/
+.card {
+    height: 180px;
+    width: 360px;
+    }
+
+/*Стилизация текста рядом с изображением "сертификата" */
+.text-sertificat {
+    font-size: 24px;
+    text-align: justify;
+    }
+
+/* Изменение отступов div для текста над изображением лаборатории */
+.labor {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: 500;
+    }
+
+ /* Задаём общий стиль тексту, для всего блока контактов */
+.contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    background-image: url(../images/contact1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+    }
+
+.contact p {
+   font-weight: 700;
+   }
+
+.list a {
+   color: black;
+   }
+
+.list a:hover {
+   color: blue;
+   }
+
+/* Позиционирование элементов блока контактов  */
+.contact-position {
+     margin-left: 5%;
+     margin-right: 5%;
+     padding-top: 5%;
+    }
+
+/* Выравниваем размер формы */
+.row > * {
+     flex-shrink: 0;
+     width: 100%;
+     max-width: 100%;
+     padding-right: 0;
+     padding-left: 0;
+     margin-top: var(--bs-gutter-y);
+    }
+
+/* Настрйока подвала нашего сайта */
+.copyright {
+     text-align: center;
+     background-color: antiquewhite;
+     padding-top: 1%;
+     padding-bottom: 1%;
+    }
+
+/* Стиль отключённой кнопки */
+.btn-disable {
+    user-select: none !important;
+    background-color: #ccc !important;
+    cursor: default !important;
+    outline: none !important;
+    pointer-events: none !important;
+    }
+
+/* стилизуем кнопку "наверх" */
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #000080;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 24pt;
+    font-weight: bold;
+    z-index: 99;
+}
+
+/* поведение при наведении мыши*/
+#top-btn:hover {
+    background-color: #00BFFF;
+    color: white;
+    }
+
+/* Изменение стилизации элементов в зависимости от расширения экрана*/
+@media screen and (max-width: 1400px) {
+    .text-indicator {
+        color: blue;
+        }
+    .bg-page1 {
+    margin-top: 10.6vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-indicator {
+        color: green;
+        }
+    .bg-page1 {
+        margin-top: 10.6vw;
+        }
+    .info {
+        display: block;
+        text-align: center;
+        }
+    .feedback {
+        margin-bottom: 5%;
+        }
+    }
+
+@media screen and (max-width: 992px) {
+    .text-indicator {
+        color: orange;
+        }
+    .bg-page1 {
+        margin-top: 12.6vw;
+        }
+    .contact {
+        font-size: 2.0vw;
+        }
+    .text-sertificat {
+        font-size: 14px;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    .text-indicator {
+        color:grey;
+        }
+    .nav-link2 {
+        font-size: 12px;
+        font-weight: 900;
+        }
+    .bg-page1 {
+        margin-top: 16.6vw;
+        }
+    .info-detail {
+        border-radius: 10%;
+        }
+    .detail {
+        display: block;
+        }
+    .btn-feedback {
+        margin-bottom: 3px;
+        }
+    .btn-detail {
+        margin-bottom: 3px;
+        }
+    }
+
+@media screen and (max-width: 576px) {
+    .text-indicator {
+        color:red;
+        }
+    .nav-link2 {
+        font-size: 10px;
+        font-weight: 900;
+        }
+    .bg-page1 {
+        margin-top: 20.6vw;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
