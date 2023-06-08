@@ -146,19 +146,19 @@ body {
 
 /* Стилизация изображений в секции Акции и скидки */
 .promotion1 {
-    background-image: url(/MedAnProject/images/promo1.jpg);
+    background-image: url(../images/promo1.jpg);
     }
 
 .promotion2 {
-    background-image: url(/MedAnProject/images/promo2.jpg);
+    background-image: url(../images/promo2.jpg);
     }
 
 .promotion3 {
-    background-image: url(/MedAnProject/images/promo3.jpg);
+    background-image: url(../images/promo3.jpg);
     }
 
 .promotion4 {
-    background-image: url(/MedAnProject/images/promo4.jpg);
+    background-image: url(../images/promo4.jpg);
     }
 
 .promotion1, .promotion2, .promotion3, .promotion4 {
